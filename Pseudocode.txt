@@ -1,0 +1,37 @@
+Step 1: Initialise Casper and variables
+Step 2: Method declaration
+Step 3: 
+	captureLinks -> Capture sub urls 
+	getDataFromPage -> Gets data from a page
+	exportData -> Store output
+	getDataFromLinks -> calls getDataFromPage and exportData
+	exportCode -> Creates batch file after link extraction
+	preparePage -> Handles page navigation for sub url extraction 
+	
+	_pprocessPage -> Jquery selectos specific to site
+	pageHelper -> Helper functions
+	
+How to run: 
+	casperjs jll_new2.coffee links
+	call output/jll_new2.bat
+
+
+
+
+
+
+phantomjs installation
+cd /usr/local/share
+yum install fontconfig freetype freetype-devel fontconfig-devel libstdc++
+sudo wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-x86_64.tar.bz2
+sudo tar xjf phantomjs-1.9.8-linux-x86_64.tar.bz2
+sudo ln -s /usr/local/share/phantomjs-1.9.8-linux-x86_64/bin/phantomjs /usr/local/share/phantomjs
+sudo ln -s /usr/local/share/phantomjs-1.9.8-linux-x86_64/bin/phantomjs /usr/local/bin/phantomjs
+sudo ln -s /usr/local/share/phantomjs-1.9.8-linux-x86_64/bin/phantomjs /usr/bin/phantomjs
+phantomjs -v
+
+casperjs installation
+git clone git://github.com/n1k0/casperjs.git
+cd casperjs
+ln -sf `pwd`/bin/casperjs /usr/local/bin/casperjs
+casperjs
